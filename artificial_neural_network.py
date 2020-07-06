@@ -76,15 +76,13 @@ Number of Products: 2
 Does this customer have a credit card? Yes
 Is this customer an Active Member: Yes
 Estimated Salary: $ 50000
-Is valuable customer?
-
 Solution:
 """
 
 print(ann.predict(sc.transform([[1, 0, 0, 600, 1, 40, 3, 60000, 2, 1, 1, 50000]])) > 0.5)
 
 """
-Therefore, our ANN model predicts that this customer is valuable for the bank
+Therefore, our ANN model predicts that this customer is not leaving the bank this year
 """
 
 # Predicting the Test set results
